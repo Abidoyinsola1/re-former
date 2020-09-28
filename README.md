@@ -1,24 +1,58 @@
-# README
+![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
+# Playing with Rails form-helpers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is part of the Forms Project in The Odin Project's Ruby on Rails Curriculum.<br>
 
-Things you may want to cover:
+> The project is built to test the rails helpers.
 
-* Ruby version
+## Built With
+* Ruby
+* Ruby on Rails
 
-* System dependencies
+## Linters
+* Rubocop
+* Stylelint
 
-* Configuration
+## Prerequisities
+To get this project up and running locally, you must have ruby, ruby on rails, sqlite3, and yarn installed on your computer.
 
-* Database creation
+## Getting Started
 
-* Database initialization
+**To get this project set up on your local machine, follow these simple steps:**
+**Step 1**<br>
+Navigate through the local folder where you want to clone the repository and run<br>
+`hhttps://github.com/Abidoyinsola1/re-former`. It will clone the repo to your local folder.
+**Step 2**<br>
+Run `cd re-former`.<br>
+**Step 3**<br>
+Run `bundle install` to install the gems from the `Gemfile`.<br>
+**Step 4**<br>
+Run `yarn install` to install the packages from the `package.json` file.<br>
+**Step 5**<br>
+Run `rake db:migrate` to create you local database.
+**Step 6**<br>
+Run `rails server` to start the rails server.
+**Step 7**<br>
+You can navigate to `http://localhost:3000/` to see the project working.<br>
+**Step 8**<br>
+You can access `users/new`, `users/:id/edit` and `users/:id` paths.<br>
 
-* How to run the test suite
+## Authors
+:bust_in_silhouette: **Gürbüz Ertunga**
+- Github: [@gurbuzertunga](https://github.com/gurbuzertunga)
+- Linkedin: [Gürbüz Ertunga](https://www.linkedin.com/in/gurbuz-ertunga-a607a2a5/)
 
-* Services (job queues, cache servers, search engines, etc.)
+:bust_in_silhouette: **Abiola Doyinsola Adeyemi**
+- Github: [@Abidoyinsola1](https://github.com/Abidoyinsola1)
+- Twitter: [@Abidoyinsola](https://twitter.com/abidoyinsola)
+- LinkedIn: [Doyinsola Abiola Adeyemi](https://www.linkedin.com/in/doyinsola-adeyemi)
 
-* Deployment instructions
+## :handshake: Contributing
+Our favourite contributions are those that help us improve the project, whether with a contribution, an issue, or a feature request!
+Feel free to check the [issues page](https://github.com/cristianCeamatu/microverse-rails-blog/issues) to either create an issue or help us out by fixing an existing one.
 
-* ...
+## Show your support
+If you've read this far....give us a :star:️!
+
+## :memo: License
+This project is licensed by Microverse and the Odin Project
