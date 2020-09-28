@@ -13,7 +13,9 @@
 <%
 =end%>
 
-<%= form_tag('/users' , method: 'post' )do %>
+<%
+=begin%>
+ <%= form_tag('/users' , method: 'post' )do %>
   <%=label_tag 'user[username]', 'username:' %>
   <%=text_field_tag 'user[username]' %> <br>
   <%=label_tag 'user[email]', 'email: ' %>
@@ -21,4 +23,19 @@
   <%=label_tag 'user[password]', 'password: '%>
   <%=password_field_tag 'user[password]' %> <br>
   <%= submit_tag 'Submit' %> <br>
-<%end%>
+<%end%> 
+<%
+=end%>
+
+<%= form_for @user, html: {:class => "needs-validation"}  do |f| %>  
+  <% @user.errors.full_messages.each do |error| %>
+  <li><%= error %></li><br>
+  <% end %>
+  <%= f.label :username, 'Your Username here:'%>
+  <%= f.text_field :username%><br><br>
+  <%= f.label :email, 'Email: '%>
+  <%= f.text_field :email, placeholder: 'username@gmail.com'%><br><br>
+  <%= f.label :password, 'Password'%>
+  <%= f.password_field :password, placeholder: 'password here' %><br><br>
+  <%= f.submit 'Save'%>
+<% end %>
